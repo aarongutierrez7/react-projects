@@ -1,0 +1,74 @@
+.ig-followCard {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: .8rem;
+  justify-content: space-between;
+}
+
+.ig-followCard-header {
+  display: flex;
+  align-items: center;
+  gap: 4px
+}
+
+.ig-followCard-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.ig-followCard-infoUserName {
+  opacity: .6;
+}
+
+.ig-followCard-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 1000px;
+}
+
+.ig-followCard-button {
+  cursor: pointer;
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  border: 1px solid #000000;
+  transition: .3s ease background-color;
+}
+
+.ig-followCard-button:hover {
+  opacity: .8;
+}
+
+.ig-followCard-text {
+  display: block;
+}
+
+.ig-followCard-button.is-following {
+  border: 1px solid #bbb;
+  background: transparent;
+  color: #fff;
+  width: 140px;
+}
+
+.ig-followCard-button.is-following:hover {
+  background-color: rgba(255, 0, 0, 0.178);
+  color: red;
+  border: 1px solid red;
+  transition: .3s ease all;
+  opacity: 1;
+}
+
+.ig-followCard-button.is-following:hover .ig-followCard-text {
+  display: none;
+}
+
+.ig-followCard-button.is-following:hover .ig-followCard-stopFollow {
+  display: block;
+}
+
+.ig-followCard-stopFollow {
+  display: none;
+}
